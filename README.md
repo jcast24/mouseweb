@@ -1,7 +1,5 @@
 # mouseweb
 
-## TODO
-
 Overall Project 
 - [ ] Implement with DENO 2.0
 - [ ] Once the project is finished, try converting it to TypeScript
