@@ -1,5 +1,11 @@
 # mouseweb
 
+### Summary
+
+A basic application to help users figure out how to choose a gaming mouse. Choosing a gaming mouse depends on the users hand size, grip style, and their preference of shape. 
+
+**Note: This application isn't always going to be perfect, choosing a mouse is always going to be subjective and won't be 1 to 1. Use this app to give you an IDEA of what you would like.** 
+
 Overall Project 
 - [ ] Implement with DENO 2.0
 - [ ] Once the project is finished, try converting it to TypeScript
