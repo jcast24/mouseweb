@@ -1,5 +1,19 @@
-import {DB} from server.js;
+import sqlite3 from "sqlite3";
 
+const sql3 = sqlite3.verbose();
+
+const DB = new sql3.Database(
+    "./mice.db",
+    sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE,
+    connected,
+);
+
+function connected(err) {
+    if (err) {
+        console.error(err.message);
+    }
+    console.log("Connection successful");
+}
 let createTable = `CREATE TABLE IF NOT EXISTS mice(
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
@@ -17,5 +31,8 @@ DB.run(createTable, [], function(err) {
     }
     console.log("Table has been created!");
 });
+export { DB };mport {DB} from server.js;
+
+
 
 
