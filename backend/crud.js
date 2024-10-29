@@ -31,7 +31,8 @@ DB.run(createTable, [], function(err) {
     }
     console.log("Table has been created!");
 });
-export { DB };mport {DB} from server.js;
+
+export { DB };
 
 
 
