@@ -23,6 +23,9 @@ Backend
 - [ ] Write tests for each CRUD operation
 
 Frontend
+- [ ] Create everything in Vanilla JS
+
+Add this stuff later
 - [ ] Create folder and initialize react project via vite 
 - [ ] Remove unnecessary files from vite, make the front-end very barebones (keep it simple)
 - [ ] Create an input area for user hand size
