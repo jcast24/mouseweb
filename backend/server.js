@@ -9,7 +9,7 @@ const PORT = 3000;
 
 // cors stuff
 const corsOptions = {
-    origin:["http://localhost:3000"],
+    origin: ["http://localhost:3000"],
 }
 app.use(cors(corsOptions));
 
@@ -18,7 +18,26 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
     res.send("Everything is working!");
-})
+});
+
+/* 
+ * /api/items
+ * 
+ * Show all the items
+*/
+
+app.get("/api/items", (req, res) => {
+    const getAllItems = "SELECT * FROM mice";
+    
+    DB.all(getAllItems, [], function(err, rows) {
+        if(err) {
+            return res.status(500).json({ error: err.message });
+        }
+        res.status(200).json(rows);
+    });
+
+    res.send("Success!");
+});
 
 app.listen(PORT, (err) => {
     if (err) {
