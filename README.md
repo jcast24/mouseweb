@@ -24,6 +24,7 @@ Backend
 
 Frontend
 - [ ] Create everything in Vanilla JS
+- [ ] Add three.js functionality for each item
 
 Add this stuff later
 - [ ] Create folder and initialize react project via vite 
