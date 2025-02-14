@@ -12,7 +12,7 @@ Overall Project
 - [ ] Add implementation for Docker/Kubernetes and host via AWS (understand cloud concepts)
 
 Backend 
-- [ ] Add express
+- [x] Add express
 - [ ] Add server routes
 - [ ] Add database connection via SQLite
     - [ ] Later on implement with PostgreSQL
