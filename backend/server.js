@@ -35,8 +35,6 @@ app.get("/api/items", (req, res) => {
         }
         res.status(200).json(rows);
     });
-
-    res.send("Success!");
 });
 
 app.listen(PORT, (err) => {
