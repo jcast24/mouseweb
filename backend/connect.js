@@ -8,12 +8,6 @@ const DB = new sql3.Database(
     connected,
 );
 
-function connected(err) {
-    if (err) {
-        console.error(err.message);
-    }
-    console.log("Connection successful");
-}
 let createTable = `CREATE TABLE IF NOT EXISTS mice(
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
@@ -23,6 +17,15 @@ let createTable = `CREATE TABLE IF NOT EXISTS mice(
     width REAL NOT NULL,
     shape TEXT NOT NULL
 )`;
+
+
+function connected(err) {
+    if (err) {
+        console.error(err.message);
+    }
+    console.log("Connection successful");
+}
+
 
 DB.run(createTable, [], function(err) {
     if (err) {
